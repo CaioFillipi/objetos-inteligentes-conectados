@@ -10,11 +10,13 @@ const char* SSID = "Primarada";
 const char* PASSWORD = "@RTX1080";                          
  
 const char* BROKER_MQTT = "test.mosquitto.org"; 
-int BROKER_PORT = 1883;                   
+int BROKER_PORT = 1883;
+long int timeEngine = 0;           
 
 #define ID_MQTT  "RTX43"             
 #define TOPIC_SUBSCRIBE "Fish_Feeder_Project_Mackenzie"  
 
+void startEngineAutomatic(long int timeToActiveEngine);
 void startEngine();
 void stopEngine();
 void keepConnectionAlive();  
@@ -34,6 +36,7 @@ void setup() {
 
 void loop() {
   keepConnectionAlive();
+  startEngineAutomatic(timeEngine);
   MQTT.loop();
 }
 
@@ -110,4 +113,13 @@ void startEngine(){
 }
 void stopEngine(){
  digitalWrite(engine, LOW);
+}
+
+void startEngineAutomatic(long int timeToActiveEngine){
+  if(timeToActiveEngine == 28800000){
+      startEngine();
+      stopEngine();
+      timeEngine = 0;
+    }
+    timeEngine++;
 }
