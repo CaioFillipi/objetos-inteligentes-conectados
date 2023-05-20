@@ -1,10 +1,15 @@
 #include <ESP8266WiFi.h> 
 #include <PubSubClient.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
 
 #define engine 12  
+#define dados 13
 
 WiFiClient wifiClient; 
-PubSubClient MQTT(wifiClient);  
+PubSubClient MQTT(wifiClient);
+OneWire oneWire(dados);
+DallasTemperature sensors(&oneWire);
 
 const char* SSID = "Primarada";               
 const char* PASSWORD = "@RTX1080";                          
@@ -23,12 +28,14 @@ void keepConnectionAlive();
 void WifiConnect();     
 void MQTTConnect();     
 void receivePackage(char* topic, byte* payload, unsigned int length);
+void sendMessageToBroker();
 
 void setup() {        
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(engine,OUTPUT);
   Serial.begin(115200);
 
+  sensors.begin();
   WifiConnect();
   MQTT.setServer(BROKER_MQTT, BROKER_PORT);  
   MQTT.setCallback(receivePackage); 
@@ -122,4 +129,9 @@ void startEngineAutomatic(long int timeToActiveEngine){
       timeEngine = 0;
     }
     timeEngine++;
+}
+
+void sendMessageToBroker() { 
+ sensors.requestTemperatures();
+ MQTT.publish(TOPIC_SUBSCRIBE, sensors.getTempCByIndex(0));
 }
