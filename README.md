@@ -57,4 +57,16 @@ Outro ponto importante em relação ao projeto Consumer_MQTT é em relação ao 
 <strong>DallasTemperature</strong> e <strong>OneWire</strong>. Segue um passo-a-passo de como realizar a instalação <a href="https://curtocircuito.com.br/blog/Categoria%20Arduino/como-utilizar-o-ds18b20">
 Instalação Bibliotecas</a>.
 
+O projeto também dispõe de um portal na qual é possível realizar o acionamento do motor. Para realizar a comunicação do portal com o Broker utilizei a biblioteca 
+<a href="https://github.com/mqttjs/MQTT.js">MQTT.js</a>
+
+Tela de login do portal.
+
+![image](https://github.com/CaioFillipi/objetos-inteligentes-conectados/assets/19175715/4787bd48-c9b2-44b4-92aa-f1843f450138)
+
+Painel de controle do alimentador
+
+![image](https://github.com/CaioFillipi/objetos-inteligentes-conectados/assets/19175715/095da4e7-c3b5-49ba-bff5-671915fe9cce)
+
+
 Após todas bibliotecas instaladas, basta realizar o upload dos projetos para as placas e aproveitar!
