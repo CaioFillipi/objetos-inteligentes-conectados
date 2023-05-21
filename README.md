@@ -16,13 +16,13 @@ Materiais utilizados para desenvolver o projeto:
     <a target="_blank" href="https://www.embarcados.com.br/wp-content/uploads/2018/01/projeto-iot-portatil-850x510.png">Node MCU;</a>
   </li>
   <li>
-    <a target="_blank" href="https://create.arduino.cc/projecthub/now/l298n-motor-module-service-ba0f56](https://cdn.awsli.com.br/600x700/804/804388/produto/204877418/driver-motor-ponte-h-dupla-l298-motor-passo-ou-dc-1-mkcyqx.jpg">Driver Ponte H;</a>
+    <a target="_blank" href="https://cdn.awsli.com.br/600x700/804/804388/produto/204877418/driver-motor-ponte-h-dupla-l298-motor-passo-ou-dc-1-mkcyqx.jpg">Driver Ponte H;</a>
   </li>
   <li>
-    <a target="_blank" href="https://www.systronyx.com/image/cache/catalog/mediaproto1-800x640.jpg">Placa Protoboard 400 pontos;</a>
+    <a target="_blank" href="https://cdn.awsli.com.br/600x700/468/468162/produto/19414386ea97456c0c.jpg">Placa Protoboard 400 pontos;</a>
   </li>
   <li>
-    <a target="_blank" href="encurtador.com.br/nuGL9">Mini Motor DC;</a>
+    <a target="_blank" href="https://cdn.awsli.com.br/600x700/980/980586/produto/181175637/9b64b30c23.jpg">Mini Motor DC;</a>
   </li>
   <li>
     <a target="_blank" href="https://http2.mlstatic.com/D_NQ_NP_987254-MLB46742289443_072021-W.jpg">Porta Pilhas 4 Pilhas;</a>
