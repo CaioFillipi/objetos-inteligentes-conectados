@@ -16,7 +16,7 @@ Materiais utilizados para desenvolver o projeto:
     <a target="_blank" href="https://www.embarcados.com.br/wp-content/uploads/2018/01/projeto-iot-portatil-850x510.png">Node MCU;</a>
   </li>
   <li>
-    <a target="_blank" href="https://create.arduino.cc/projecthub/now/l298n-motor-module-service-ba0f56">Driver Ponte H;</a>
+    <a target="_blank" href="https://create.arduino.cc/projecthub/now/l298n-motor-module-service-ba0f56](https://cdn.awsli.com.br/600x700/804/804388/produto/204877418/driver-motor-ponte-h-dupla-l298-motor-passo-ou-dc-1-mkcyqx.jpg">Driver Ponte H;</a>
   </li>
   <li>
     <a target="_blank" href="https://www.systronyx.com/image/cache/catalog/mediaproto1-800x640.jpg">Placa Protoboard 400 pontos;</a>
